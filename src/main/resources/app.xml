@@ -5,7 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
         http://www.springframework.org/schema/aop
-        http://www.springframework.org/schema/aop/spring-aop-4.2.xsd">
+        http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
+http://www.springframework.org/schema/beans ">
 
     <!--
 
@@ -17,10 +18,10 @@ com/dream/db/spring/v1/Tank.java
 com/dream/db/spring/v1/Tank.java
     -->
 
-<!--    <bean id="tank" class="com.mashibing.dp.spring.v1.Tank"/>-->
+    <!--    <bean id="tank" class="com.mashibing.dp.spring.v1.Tank"/>-->
     <bean id="tank" class="com.dream.db.spring.v1.Tank"/>
     <!--    <bean id="timeProxy" class="com.mashibing.dp.spring.v1.TimeProxy"/>-->
-        <bean id="timeProxy" class="com.dream.db.spring.v1.TimeProxy"/>
+    <bean id="timeProxy" class="com.dream.db.spring.v1.TimeProxy"/>
 
     <aop:config>
         <aop:aspect id="time" ref="timeProxy">

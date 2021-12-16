@@ -10,9 +10,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * spring aop test
  */
 public class Main {
-    public static void main(String[] args) {
+ /*   public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("app.xml");
-        Tank t = (Tank) context.getBean("tank");
+        Tank t = (Tank)context.getBean("tank");
+//        Tank t = (Tank) context.getParent("tank");
+//        Tank t = context1.getApplicationName("tank");
         t.move();
-    }
+    }*/
 }

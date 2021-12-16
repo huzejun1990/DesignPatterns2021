@@ -10,11 +10,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * sping aop test
  */
 public class Main {
-    public static void main(String[] args) {
+  /*  public static void main(String[] args) {
+
         ApplicationContext context = new ClassPathXmlApplicationContext("aop_auto.xml");
-        Tank t = (Tank) context.getBean("tank");
+//        Tank t = (Tank) context.getBean("tank");
+        Tank t = (Tank) context.getParent("tank");
         t.move();
 
     }
+*/
 
 }
